@@ -1,0 +1,23 @@
+{
+"team":
+	{
+	"id":3,
+	"data":{
+		"leagueId" : 34,
+		"HomeTeam":"India",
+		"visitingTeam" : "Aus",
+		"weight" : 67.6,
+		"height" : 6.2
+	},
+	"odds":[
+	   {
+		"price" :4.7,
+		"name":"suren"
+	   },
+	   {
+		"price" :5.7,
+		"name":"keshav"
+	   }
+	   ]
+	}
+}

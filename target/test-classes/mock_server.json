@@ -1,0 +1,31 @@
+{
+	"request": {
+		"method": "GET",
+		"url": "/currencies",
+		"headers": {
+			"Content_Type": "application/json"
+		}
+	},
+	"response": {
+		"status": 200,
+		"headers": {
+			"Content_Type": "application/json"
+		},
+		"jsonBody": {
+			"success": true,
+			"timestamp": 1625276343,
+			"base": "EUR",
+			"date": "2021-07-03",
+			"rates": {
+				"USD": 1.1865,
+				"EUR": 1,
+				"AUD": 1.576587,
+				"CAD": 1.462023,
+				"PLN": 4.510009,
+				"MXN": 23.460309,
+				"INR": 88.696852,
+				"AED": 4.358137
+			}
+		}
+	}
+}

@@ -1,0 +1,188 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "success": true,
+            "timestamp": 1625273054,
+            "base": "EUR",
+            "date": "2021-07-03",
+            "rates": {
+                "USD": 1.1865,
+                "EUR": 1,
+                "AUD": 1.576587,
+                "CAD": 1.462023,
+                "PLN": 4.510009,
+                "MXN": 23.449686,
+                "INR": 88.696852,
+                "AED": 4.358137
+            }
+        }
+    ],
+    "required": [
+        "success",
+        "timestamp",
+        "base",
+        "date",
+        "rates"
+    ],
+    "properties": {
+        "success": {
+            "$id": "#/properties/success",
+            "type": "boolean",
+            "title": "The success schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "timestamp": {
+            "$id": "#/properties/timestamp",
+            "type": "integer",
+            "title": "The timestamp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1625273054
+            ]
+        },
+        "base": {
+            "$id": "#/properties/base",
+            "type": "string",
+            "title": "The base schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "EUR"
+            ]
+        },
+        "date": {
+            "$id": "#/properties/date",
+            "type": "string",
+            "title": "The date schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2021-07-03"
+            ]
+        },
+        "rates": {
+            "$id": "#/properties/rates",
+            "type": "object",
+            "title": "The rates schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "USD": 1.1865,
+                    "EUR": 1,
+                    "AUD": 1.576587,
+                    "CAD": 1.462023,
+                    "PLN": 4.510009,
+                    "MXN": 23.449686,
+                    "INR": 88.696852,
+                    "AED": 4.358137
+                }
+            ],
+            "required": [
+                "USD",
+                "EUR",
+                "AUD",
+                "CAD",
+                "PLN",
+                "MXN",
+                "INR",
+                "AED"
+            ],
+            "properties": {
+                "USD": {
+                    "$id": "#/properties/rates/properties/USD",
+                    "type": "number",
+                    "title": "The USD schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1.1865
+                    ]
+                },
+                "EUR": {
+                    "$id": "#/properties/rates/properties/EUR",
+                    "type": "integer",
+                    "title": "The EUR schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "AUD": {
+                    "$id": "#/properties/rates/properties/AUD",
+                    "type": "number",
+                    "title": "The AUD schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1.576587
+                    ]
+                },
+                "CAD": {
+                    "$id": "#/properties/rates/properties/CAD",
+                    "type": "number",
+                    "title": "The CAD schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1.462023
+                    ]
+                },
+                "PLN": {
+                    "$id": "#/properties/rates/properties/PLN",
+                    "type": "number",
+                    "title": "The PLN schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        4.510009
+                    ]
+                },
+                "MXN": {
+                    "$id": "#/properties/rates/properties/MXN",
+                    "type": "number",
+                    "title": "The MXN schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        23.449686
+                    ]
+                },
+                "INR": {
+                    "$id": "#/properties/rates/properties/INR",
+                    "type": "number",
+                    "title": "The INR schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        88.696852
+                    ]
+                },
+                "AED": {
+                    "$id": "#/properties/rates/properties/AED",
+                    "type": "number",
+                    "title": "The AED schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        4.358137
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
